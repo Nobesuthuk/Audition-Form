@@ -1,42 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="audition.css" />
     <title>Audition Form</title>
-    
+
 </head>
- <body>
+
+<body>
     <form class="Main">
-        <h1 style="text-align: center;"><u> Audition Form</u></h1>
-        <p style="background-image: url('gitter.jpg');"></p>
-        <div class="Personal">
-            <h3><u>Personal Information</u></h3>
-            <h4>Please Select the show you are Auditioning for </4>
-            <br>
-            <input type="checkbox" name="Show" value="Idols"/> Idols
-                <input type="checkbox" name="Show" value="Talent" checked="checked"/> Talent
-                    <input type="checkbox" name="Show" value="Freestyle"/> Freestyle
-                <br>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <h1 style="text-align: center;margin: 0%;"><u> Audition Form</u></h1>
+            <div class="Personal">
+                <h4>Please Select the show you are Auditioning for </4>
                     <br>
-                        <p> Name<input type="text" name="Name"/> Surname<input type="text" name="Surname" /></p>
-          <label>Age <input type="text" name="Age" ></label>  
-                <br>
-                <br>
-                Gender:
-                    <input id="female" type="radio" name="gender"value="f">
-                        <label for="female">Female</label>
-                            <input id="male" type="radio" name="gender"value="m">  
-                             <label for="male">Male</label>
+                    <input type="checkbox" name="Show" value="Idols" /> Idols
+                    <input type="checkbox" name="Show" value="Talent" checked="checked" /> Talent
+                    <input type="checkbox" name="Show" value="Freestyle" /> Freestyle
+                    <div class="grid-container">
+                        <div>
+                            <div >
+                                <label for="name">name</label>
+                            <input type="text" name="Name" />
+                            </div>
+                            
+                        </div>
+                        <div>
+                            <label for="name">Surname</label>
+                            <input type="text" name="Name" />
+                        </div>
+                    </div>
+                    
+                    <input type="text" name="Surname" />
+                    <label>Age </label>
+                    <input type="text" name="Age">
+                    <br>
+                    <br>
+                    Gender:
+                    <input id="female" type="radio" name="gender" value="f">
+                    <label for="female">Female</label>
+                    <input id="male" type="radio" name="gender" value="m">
+                    <label for="male">Male</label>
+        </fieldset>
 
-
-                 
+        <div>
+            <fieldset>
+                <legend>Contact details</legend>
+                <label>Email:<br />
+                    <input type="text" name="email" /></label><br />
+                <label>Mobile:<br />
+                    <input type="text" name="mobile" /></label><br />
+                <label>Telephone:<br />
+                    <input type="text" name="telephone" /></label>
+            </fieldset>
         </div>
-        <p>
 
+        <div>
+            <fieldset>
+                <legend>Instruments</legend>
+                <h4><u>Choose an instrument you play below:</u></h4>
+                <p>
+                    You can select more than one option by holding
+                    down control on a PC or command key on a Mac
+                    while selecting different options.</p>
+                <select name="instruments" size="3" multiple="multiple">
+                    <option value="guitar" selected="selected">
+                        Guitar</option>
+                    <option value="drums">Drums</option>
+                    <option value="keyboard" selected="selected">Keyboard</option>
+                    <option value="bass">Bass</option>
+            </fieldset>
+        </div>
 
-        </p>
+        <div>
+            <fieldset>
+                <legend>Music Genre</legend>
+                <p>focus this </p>
+            </fieldset>
+        </div>
     </form>
-    </body>
-    </html>
+</body>
+
+</html>
