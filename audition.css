@@ -1,29 +1,19 @@
-.Main {
-   
-    
-    position: static;
-   
-    text-decoration: none;
-   
-}
+
 
 body {
     margin-top: 0;
     padding:0;
   background-image: url('fire.jpg');
   height: 100%;
-  background-position: ;
   background-repeat: no-repeat;
   background-size: cover;
-  color: rgb(216, 3, 3);
+  color: rgb(6, 202, 49);
   font-size: large;
   
 }
 .grid-container{
     display : grid;
-    grid-template-columns: 400px 400px;
+    grid-template-columns: 300px 300px 300px;
     
 }
-
-
 
