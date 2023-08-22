@@ -9,11 +9,19 @@ body {
   background-size: cover;
   color: rgb(6, 202, 49);
   font-size: large;
-  
+  border: 50px;
+border-radius: 10px;
+border-color: rgb(6, 202, 49);
+border-style: double;
+
 }
 .grid-container{
     display : grid;
     grid-template-columns: 300px 300px 300px;
     
+}
+.details{
+  display: inline;
+  text-align: center;
 }
 
